@@ -1,30 +1,78 @@
-# React + TypeScript + Vite
+# Cubos Burger
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido como parte de um exercício na Cubos, que simula um sistema simples de carrinho de compras para um restaurante de hambúrgueres e bebidas. A aplicação foi criada utilizando React e React Router, com um backend fictício para simular requisições HTTP.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualizar produtos categorizados (hambúrgueres e bebidas) na página inicial.
+- Adicionar produtos ao carrinho de compras.
+- Atualizar a quantidade de produtos no carrinho.
+- Remover produtos do carrinho.
+- Exibir o total do carrinho em tempo real.
 
-## Expanding the ESLint configuration
+## Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+O projeto está estruturado da seguinte forma:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+├── assets                  # Imagens e ícones do projeto
+├── components              # Componentes reutilizáveis
+├── css                     # Estilos globais e modulares
+├── interfaces              # Definições de tipos e interfaces TypeScript
+├── pages                   # Páginas principais do projeto
+├── utils                   # Funções auxiliares como formatação de preço e requisições HTTP
+├── routes                  # Configuração das rotas da aplicação
+└── main.tsx                # Arquivo principal de inicialização
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Pré-requisitos
+
+- Node.js (>= 14.x)
+- Gerenciador de pacotes npm ou yarn
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+
+```bash
+$ git clone https://github.com/seu-usuario/cubos-burger.git
+$ cd cubos-burger
+```
+
+2. Instale as dependências:
+
+```bash
+$ npm install
+# ou
+$ yarn install
+```
+
+3. Inicie o servidor de desenvolvimento:
+
+```bash
+$ npm run dev
+# ou
+$ yarn dev
+```
+
+4. Abra o navegador em `http://localhost:5173` para acessar a aplicação.
+
+## Modo de Uso
+
+- Navegue pela página inicial para visualizar os produtos disponíveis.
+- Clique em "Add ao Carrinho" para adicionar um produto.
+- Vá para a página "Carrinho" para gerenciar os itens adicionados.
+- Altere a quantidade de itens no carrinho ou remova produtos conforme necessário.
+
+## Observação
+
+Este é um projeto educacional, e o backend é simulado, ou seja, não há persistência de dados.
+
+## Contato
+
+Railton Araujo
+
+---
+
+Obrigado por testar o projeto! 😊
+
