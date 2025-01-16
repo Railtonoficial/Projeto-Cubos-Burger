@@ -1,7 +1,7 @@
 export function formatPrice(price: number): string {
-  const options = {
+  const options: Intl.NumberFormatOptions = {
     style: "currency",
     currency: "BRL",
   };
-  return Intl.NumberFormat("pt-BR", options).format(price / 100);
+  return new Intl.NumberFormat("pt-BR", options).format(price / 100);
 }
