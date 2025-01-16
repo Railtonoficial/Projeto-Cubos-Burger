@@ -30,6 +30,10 @@ O projeto está estruturado da seguinte forma:
 - Node.js (>= 14.x)
 - Gerenciador de pacotes npm ou yarn
 
+## Link do Site
+
+A aplicação está disponível em: [Cubos Burger](https://cuboosburger.netlify.app/)
+
 ## Como Executar o Projeto
 
 1. Clone o repositório:
